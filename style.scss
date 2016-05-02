@@ -41,9 +41,6 @@ body {
 
 fieldset {
   border: none;
-  p {
-    margin: 0px;
-  }
 }
 
 input {
@@ -94,7 +91,10 @@ input.ng-valid.ng-touched {
   }
 }
 
-
+.error {
+  color: $warning;
+  margin: 5px;
+}
 
 
 

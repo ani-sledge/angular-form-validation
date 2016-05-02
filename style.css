@@ -28,8 +28,6 @@ body {
 
 fieldset {
   border: none; }
-  fieldset p {
-    margin: 0px; }
 
 input {
   display: inline-block;
@@ -71,5 +69,9 @@ input.ng-valid.ng-touched {
   .ng-valid .btn:hover {
     background-color: #13937a;
     border-color: #11866f; }
+
+.error {
+  color: #DA3637;
+  margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
