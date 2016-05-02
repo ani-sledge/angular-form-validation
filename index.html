@@ -7,14 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
   </head>
   <body>
   <div class="page">
-    <section class="cardregister" ng-app>
-      <form name="myform" novalidate>
+    <section class="card register" ng-app="myApp"
+      ng-controller="RegistrationController">
+      <form name="myform"
+        ng-submit="register()"
+        novalidate>
         <div class="textintro">
           <h1>Form Validation</h1>
           <p>Please fill out the following form</p>
+          <p ng-show="message">{{ message }}</p>
         </div>
 
         <fieldset>
