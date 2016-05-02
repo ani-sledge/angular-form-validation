@@ -28,6 +28,8 @@ body {
 
 fieldset {
   border: none; }
+  fieldset p {
+    margin: 0px; }
 
 input {
   display: inline-block;
@@ -43,35 +45,30 @@ input {
   border-radius: 4px;
   outline: 0; }
 
-/*
-.ng-enter.ng-enter-active,
-.ng-leave {
-  opacity: 1;
-  height: 80px;
-  overflow: hidden;
-}
+input.ng-invalid.ng-touched {
+  border-color: #DA3637; }
 
-.ng-leave.ng-leave-active,
-.ng-enter {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-*/
+input.ng-valid.ng-touched {
+  border-color: #18bc9c; }
+
 .btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
   text-align: center;
   vertical-align: middle;
-  background-color: #18bc9c;
-  border: 2px solid #18bc9c;
+  background-color: #89a4bf;
+  border: 2px solid #89a4bf;
   border-radius: 4px;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   font-family: Arial, sans-serif; }
-  .btn:hover {
+
+.ng-valid .btn {
+  background-color: #18bc9c;
+  border-color: #18bc9c; }
+  .ng-valid .btn:hover {
     background-color: #13937a;
     border-color: #11866f; }
 

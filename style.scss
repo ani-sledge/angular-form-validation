@@ -1,5 +1,8 @@
 $bordergray: #dce4ec;
+$btngray: darken($bordergray, 25%);
 $teal: #18bc9c;
+$warning: #DA3637;
+$success: $teal;
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -38,6 +41,9 @@ body {
 
 fieldset {
   border: none;
+  p {
+    margin: 0px;
+  }
 }
 
 input {
@@ -54,40 +60,39 @@ input {
   border-radius: 4px;
   outline: 0;
 }
-/*
-.ng-enter.ng-enter-active,
-.ng-leave {
-  opacity: 1;
-  height: 80px;
-  overflow: hidden;
+
+input.ng-invalid.ng-touched {
+  border-color: $warning;
 }
 
-.ng-leave.ng-leave-active,
-.ng-enter {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
+input.ng-valid.ng-touched {
+  border-color: $success;
 }
-*/
+
 .btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
   text-align: center;
   vertical-align: middle;
-  background-color: $teal;
-  border: 2px solid $teal;
+  background-color: $btngray;
+  border: 2px solid $btngray;
   border-radius: 4px;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold;
   font-family: Arial, sans-serif;
-  &:hover {
-    background-color: darken($teal, 9%);
-    border-color: darken($teal, 12%);
-  }
+
 }
 
+.ng-valid .btn {
+  background-color: $teal;
+  border-color: $teal;
+  &:hover {
+  background-color: darken($teal, 9%);
+  border-color: darken($teal, 12%);
+  }
+}
 
 
 
